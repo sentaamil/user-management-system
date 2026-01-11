@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
 
-      # ---- Backend ----
+      # ---------- Backend ----------
       - name: Install backend deps
         working-directory: backend
         run: npm install
@@ -26,7 +26,7 @@ jobs:
         working-directory: backend
         run: npm start &
 
-      # ---- Frontend ----
+      # ---------- Frontend ----------
       - name: Install frontend deps
         working-directory: frontend
         run: npm install
@@ -34,7 +34,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: frontend
+          project: frontend        # ⭐ THIS IS THE KEY FIX
           start: npm start
           wait-on: http://localhost:3000
           record: true
