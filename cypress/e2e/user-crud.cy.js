@@ -60,7 +60,7 @@ describe('User CRUD Operations', () => {
 
       // Now type invalid email AND blur to trigger validation
       cy.get('[data-cy="input-email"]')
-        .type('invalid-email')
+        .type('invalid@email')
         .blur(); // Added .blur() in case validation runs on focus loss
 
       cy.get('[data-cy="submit-user"]').click();

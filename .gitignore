@@ -1,0 +1,10 @@
+# Node
+node_modules/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Frontend cache
+frontend/node_modules/
+frontend/node_modules/.cache/
