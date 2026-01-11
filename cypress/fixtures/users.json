@@ -1,0 +1,32 @@
+{
+  "validUser": {
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "test.user@example.com",
+    "phone": "+1-555-9999",
+    "role": "User",
+    "status": "Active",
+    "department": "Testing",
+    "location": "Test City, USA"
+  },
+  "adminUser": {
+    "firstName": "Admin",
+    "lastName": "Test",
+    "email": "admin.test@example.com",
+    "phone": "+1-555-8888",
+    "role": "Admin",
+    "status": "Active",
+    "department": "Administration",
+    "location": "Admin City, USA"
+  },
+  "invalidUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "invalid-email",
+    "phone": "",
+    "role": "User",
+    "status": "Active",
+    "department": "",
+    "location": ""
+  }
+}

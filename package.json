@@ -1,0 +1,25 @@
+{
+  "name": "user-management-system",
+  "version": "1.0.0",
+  "description": "Full Stack User Management System with Cypress Testing",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install && cd .. && npm install",
+    "start-backend": "cd backend && npm start",
+    "dev-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run dev-backend\" \"npm run start-frontend\"",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "start-server-and-test start http://localhost:3000 cypress:run",
+    "test:headed": "start-server-and-test start http://localhost:3000 'cypress run --headed'",
+    "test:chrome": "start-server-and-test start http://localhost:3000 'cypress run --browser chrome'"
+  },
+  "keywords": ["user-management", "react", "node", "express", "cypress", "testing"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cypress": "^13.6.0",
+    "start-server-and-test": "^2.0.3"
+  }
+}
